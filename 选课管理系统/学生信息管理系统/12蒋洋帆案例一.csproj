@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E4C79C6-B040-49A2-825B-FBFDC8B456ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>登录案例</RootNamespace>
+    <AssemblyName>登录案例</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="best_ExampleDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>best_ExampleDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExampleDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExampleDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExampleDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExampleDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExampleDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExampleDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExampleDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExampleDBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExampleDBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExampleDBDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClass.cs" />
+    <Compile Include="kaike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kaike.Designer.cs">
+      <DependentUpon>kaike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manaclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manaclass.Designer.cs">
+      <DependentUpon>manaclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mywork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mywork.Designer.cs">
+      <DependentUpon>mywork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="select.Designer.cs">
+      <DependentUpon>select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectgrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectgrades.Designer.cs">
+      <DependentUpon>selectgrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showcourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showcourse.Designer.cs">
+      <DependentUpon>showcourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student.Designer.cs">
+      <DependentUpon>student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stumana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stumana.Designer.cs">
+      <DependentUpon>stumana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacher.Designer.cs">
+      <DependentUpon>teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teachermanage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teachermanage.Designer.cs">
+      <DependentUpon>teachermanage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teschernewclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teschernewclass.Designer.cs">
+      <DependentUpon>teschernewclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tmanas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmanas.Designer.cs">
+      <DependentUpon>tmanas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatepswd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatepswd.Designer.cs">
+      <DependentUpon>updatepswd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WatermarkTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WatermarkTextBox.Designer.cs">
+      <DependentUpon>WatermarkTextBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kaike.resx">
+      <DependentUpon>kaike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manaclass.resx">
+      <DependentUpon>manaclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mywork.resx">
+      <DependentUpon>mywork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="select.resx">
+      <DependentUpon>select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectgrades.resx">
+      <DependentUpon>selectgrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showcourse.resx">
+      <DependentUpon>showcourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stumana.resx">
+      <DependentUpon>stumana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacher.resx">
+      <DependentUpon>teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teachermanage.resx">
+      <DependentUpon>teachermanage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teschernewclass.resx">
+      <DependentUpon>teschernewclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tmanas.resx">
+      <DependentUpon>tmanas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatepswd.resx">
+      <DependentUpon>updatepswd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="best_ExampleDBDataSet.xsc">
+      <DependentUpon>best_ExampleDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="best_ExampleDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>best_ExampleDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="best_ExampleDBDataSet.xss">
+      <DependentUpon>best_ExampleDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet.xsc">
+      <DependentUpon>ExampleDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExampleDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExampleDBDataSet.xss">
+      <DependentUpon>ExampleDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet1.xsc">
+      <DependentUpon>ExampleDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExampleDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExampleDBDataSet1.xss">
+      <DependentUpon>ExampleDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet2.xsc">
+      <DependentUpon>ExampleDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExampleDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExampleDBDataSet2.xss">
+      <DependentUpon>ExampleDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet3.xsc">
+      <DependentUpon>ExampleDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExampleDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExampleDBDataSet3.xss">
+      <DependentUpon>ExampleDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet4.xsc">
+      <DependentUpon>ExampleDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExampleDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExampleDBDataSet4.xss">
+      <DependentUpon>ExampleDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet5.xsc">
+      <DependentUpon>ExampleDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExampleDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExampleDBDataSet5.xss">
+      <DependentUpon>ExampleDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet6.xsc">
+      <DependentUpon>ExampleDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExampleDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExampleDBDataSet6.xss">
+      <DependentUpon>ExampleDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet7.xsc">
+      <DependentUpon>ExampleDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExampleDBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExampleDBDataSet7.xss">
+      <DependentUpon>ExampleDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet8.xsc">
+      <DependentUpon>ExampleDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExampleDBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExampleDBDataSet8.xss">
+      <DependentUpon>ExampleDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet9.xsc">
+      <DependentUpon>ExampleDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ExampleDBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExampleDBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExampleDBDataSet9.xss">
+      <DependentUpon>ExampleDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

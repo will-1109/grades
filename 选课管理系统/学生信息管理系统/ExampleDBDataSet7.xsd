@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ExampleDBDataSet7" targetNamespace="http://tempuri.org/ExampleDBDataSet7.xsd" xmlns:mstns="http://tempuri.org/ExampleDBDataSet7.xsd" xmlns="http://tempuri.org/ExampleDBDataSet7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ExampleDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ExampleDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.登录案例.Properties.Settings.GlobalReference.Default.ExampleDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ownstu1TableAdapter" GeneratorDataComponentClassName="ownstu1TableAdapter" Name="ownstu1" UserDataComponentName="ownstu1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ExampleDBConnectionString (Settings)" DbObjectName="ExampleDB.dbo.ownstu1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT stuxuehao, stuname, stugrade, stubanji, stusex, claname, grades, term FROM dbo.ownstu1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="stuxuehao" DataSetColumn="stuxuehao" />
+              <Mapping SourceColumn="stuname" DataSetColumn="stuname" />
+              <Mapping SourceColumn="stugrade" DataSetColumn="stugrade" />
+              <Mapping SourceColumn="stubanji" DataSetColumn="stubanji" />
+              <Mapping SourceColumn="stusex" DataSetColumn="stusex" />
+              <Mapping SourceColumn="claname" DataSetColumn="claname" />
+              <Mapping SourceColumn="grades" DataSetColumn="grades" />
+              <Mapping SourceColumn="term" DataSetColumn="term" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ExampleDBDataSet7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ExampleDBDataSet7" msprop:Generator_UserDSName="ExampleDBDataSet7">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ownstu1" msprop:Generator_TableClassName="ownstu1DataTable" msprop:Generator_TableVarName="tableownstu1" msprop:Generator_TablePropName="ownstu1" msprop:Generator_RowDeletingName="ownstu1RowDeleting" msprop:Generator_RowChangingName="ownstu1RowChanging" msprop:Generator_RowEvHandlerName="ownstu1RowChangeEventHandler" msprop:Generator_RowDeletedName="ownstu1RowDeleted" msprop:Generator_UserTableName="ownstu1" msprop:Generator_RowChangedName="ownstu1RowChanged" msprop:Generator_RowEvArgName="ownstu1RowChangeEvent" msprop:Generator_RowClassName="ownstu1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stuxuehao" msprop:Generator_ColumnVarNameInTable="columnstuxuehao" msprop:Generator_ColumnPropNameInRow="stuxuehao" msprop:Generator_ColumnPropNameInTable="stuxuehaoColumn" msprop:Generator_UserColumnName="stuxuehao" type="xs:long" />
+              <xs:element name="stuname" msprop:Generator_ColumnVarNameInTable="columnstuname" msprop:Generator_ColumnPropNameInRow="stuname" msprop:Generator_ColumnPropNameInTable="stunameColumn" msprop:Generator_UserColumnName="stuname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stugrade" msprop:Generator_ColumnVarNameInTable="columnstugrade" msprop:Generator_ColumnPropNameInRow="stugrade" msprop:Generator_ColumnPropNameInTable="stugradeColumn" msprop:Generator_UserColumnName="stugrade" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stubanji" msprop:Generator_ColumnVarNameInTable="columnstubanji" msprop:Generator_ColumnPropNameInRow="stubanji" msprop:Generator_ColumnPropNameInTable="stubanjiColumn" msprop:Generator_UserColumnName="stubanji" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stusex" msprop:Generator_ColumnVarNameInTable="columnstusex" msprop:Generator_ColumnPropNameInRow="stusex" msprop:Generator_ColumnPropNameInTable="stusexColumn" msprop:Generator_UserColumnName="stusex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="claname" msprop:Generator_ColumnVarNameInTable="columnclaname" msprop:Generator_ColumnPropNameInRow="claname" msprop:Generator_ColumnPropNameInTable="clanameColumn" msprop:Generator_UserColumnName="claname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="grades" msprop:Generator_ColumnVarNameInTable="columngrades" msprop:Generator_ColumnPropNameInRow="grades" msprop:Generator_ColumnPropNameInTable="gradesColumn" msprop:Generator_UserColumnName="grades" type="xs:long" minOccurs="0" />
+              <xs:element name="term" msprop:Generator_ColumnVarNameInTable="columnterm" msprop:Generator_ColumnPropNameInRow="term" msprop:Generator_ColumnPropNameInTable="termColumn" msprop:Generator_UserColumnName="term">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ownstu1" />
+      <xs:field xpath="mstns:stuxuehao" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
